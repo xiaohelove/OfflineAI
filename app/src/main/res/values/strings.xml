@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">离线AI助手</string>
+    <string name="tab_diagnosis">诊断</string>
+    <string name="tab_manual">手册</string>
+    <string name="splash_initializing">正在初始化AI模型...</string>
+    <string name="splash_extracting">正在准备模型文件...</string>
+    <string name="splash_loading">正在加载神经网络...</string>
+    <string name="splash_ready">初始化完成</string>
+    <string name="error_model_load_failed">模型加载失败</string>
+    <string name="error_extract_failed">模型文件解压失败</string>
+    <string name="disclaimer">以上诊断建议由本地AI生成，仅供参考</string>
+    <string name="hint_input">描述设备故障现象...</string>
+    <string name="empty_chat_guide">描述你的设备故障现象，AI 将基于手册内容给出诊断建议。</string>
+</resources>

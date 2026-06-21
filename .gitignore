@@ -1,0 +1,29 @@
+# Gradle
+.gradle/
+build/
+*/build/
+
+# IDE
+.idea/
+*.iml
+.gradle/
+local.properties
+
+# Android
+app/release/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Native
+.cxx/
+app/.cxx/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model (太大，不纳入版本控制)
+*.gguf
+app/src/main/assets/*.gguf
