@@ -1,8 +1,8 @@
-# OfflineAI - 完全离线 AI 诊断助手 / Fully Offline AI Diagnostic Assistant
+# OfflineAI - 离线 AI 助手 / Offline AI Assistant
 
-基于 llama.cpp + Qwen3.5-2B 的 Android 离线 AI 故障诊断应用。
+基于 llama.cpp + Qwen3.5-2B 的 Android 离线 AI 知识问答应用。根据导入的手册或文档内容回答用户问题，不进行任何诊断或推理判断。
 
-An Android offline AI diagnostic application built on llama.cpp + Qwen3.5-2B.
+An Android offline AI knowledge-based Q&A application built on llama.cpp + Qwen3.5-2B. It answers user questions based on imported manuals or documents — it does not perform any diagnosis or inferential judgment.
 
 ## 关于本项目 / About
 
@@ -36,15 +36,15 @@ OfflineAI 面向无网络和涉密环境，核心场景包括 / OfflineAI target
 
 | 场景 / Scenario | 说明 / Description | 网络环境 / Network |
 |------|------|---------|
-| 工业设备维修 / Industrial Maintenance | 工厂车间、地下室等现场维修，查阅设备手册 / On-site equipment repair referencing manuals | 无信号 / No signal |
-| 野外勘探作业 / Field Exploration | 地质勘探、石油钻井等野外设备故障排查 / Field equipment troubleshooting | 完全无网 / Fully offline |
-| 户外应急救援 / Outdoor Emergency Rescue | 救援现场查询急救流程、装备操作规范 / On-site first aid and equipment operation lookup | 无覆盖 / No coverage |
-| 涉密内网环境 / Classified Intranet | 医院、军工等内部设备维护，数据不能外传 / Internal equipment maintenance, data cannot leave the premises | 内网隔离 / Air-gapped |
+| 现场手册查询 / On-site Manual Lookup | 工厂车间、仓库等现场查阅设备手册 / On-site lookup of equipment manuals | 无信号 / No signal |
+| 野外资料查阅 / Field Reference | 地质勘探、户外作业时查阅技术资料 / Field reference of technical documents | 完全无网 / Fully offline |
+| 应急流程查询 / Emergency Procedure | 救援现场查询急救流程、装备操作规范 / On-site first aid and equipment procedure lookup | 无覆盖 / No coverage |
+| 涉密内网知识库 / Classified Knowledge Base | 医院、军工等内部文档查询，数据不出内网 / Internal document query, data stays within classified network | 内网隔离 / Air-gapped |
 
 产品核心价值 / Core Value:
 1. **完全离线 / Fully Offline**：模型和数据均在本地，零网络依赖 / Models and data are local, zero network dependency
 2. **数据安全 / Data Security**：手册内容不上传云端，敏感文档不外泄 / Manuals never uploaded to cloud, sensitive documents stay local
-3. **精准溯源 / Traceable Citations**：诊断建议引用手册原文编号，可追溯验证 / Diagnostic suggestions cite original source numbers for verification
+3. **精准溯源 / Traceable Citations**：回答引用手册原文编号，可追溯验证 / Answers cite original source numbers for verification
 4. **即装即用 / Ready to Use**：首次启动自动解压模型，后续冷启动小于 5 秒 / Auto-extracts models on first launch, subsequent cold starts under 5 seconds
 
 ## 路线图 / Roadmap
@@ -154,7 +154,7 @@ cd OfflineAI
 2. 显示启动页（品牌 logo + 进度条）/ Splash screen with logo and progress bar
 3. 后台自动解压 GGUF 模型（约 20-30 秒，仅首次）/ Auto-extracts GGUF models in background (~20-30s, first launch only)
 4. 加载模型到内存（约 3-5 秒）/ Loads models into memory (~3-5s)
-5. 自动进入主界面（诊断 Tab）/ Auto-enters main interface (Diagnostics tab)
+5. 自动进入主界面（问答 Tab）/ Auto-enters main interface (Chat tab)
 
 **后续启动 / Subsequent launches**：模型文件已解压，跳过解压步骤，3-5 秒即可进入 / Models already extracted, skip decompression, ready in 3-5 seconds.
 
